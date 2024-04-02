@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+#intro-section {
+  background-image: url(../public/mycomputer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #746F75;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #746F75;
+  padding: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+section #intro {
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+#intro .btn-contact {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #ba9bcf;
+  background-color: #ece1f1;
+  border: 1px solid #ece1f1;
+  border-radius: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+#intro .btn-contact:hover {
+  border-bottom: #b06cd0;
+  background-color: #63586a;
+
 }
 
-@keyframes App-logo-spin {
+
+/* skills section  */
+.card {
+  height: 100%;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card .card-body {
+  margin-top: auto;
+}
+
+.card img {
+  max-width: 50px;
+}
+
+
+.progress-wrapper {
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar.figma {
+  width: 80%;
+}
+
+.progress-bar.html {
+  width: 95%;
+}
+
+.progress-bar.css {
+  width: 90%;
+}
+
+.progress-bar.js {
+  width: 50%;
+}
+
+.progress-bar.rwd {
+  width: 90%;
+}
+
+.progress-bar.react {
+  width: 45%;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #007bff;
+  animation: fillProgress 2s ease-in-out forwards;
+}
+
+@keyframes fillProgress {
   from {
-    transform: rotate(0deg);
+    width: 0%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+.skills {
+  background-image: url(../public/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+
+/* Projects  */
+.project-overlay:hover {
+  background-color: rgba(16, 161, 125, 0.7);
+  transition: background-color 1s;
+}
+
+.project-overlay button {
+  display: none;
+}
+
+.project-container:hover button {
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+.project-container img {
+  height: 200px;
+}
+
+
+/* Footer  */
+footer p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 600px) {
+  #intro h4 {
+    font-size: 20px;
   }
+
+  #intro p {
+    font-size: 30px;
+  }
+
+  #intro button {
+    font-size: 20px;
+  }
+
+  #intro-section {
+    background-size: 130% 100%;
+  }
+
 }
